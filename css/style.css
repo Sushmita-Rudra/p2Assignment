@@ -1,0 +1,51 @@
+
+.navbar {
+    overflow: hidden;
+    background-color: pink;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 500;
+}
+.circleImg{
+    border-radius: 50%;
+    float:left;
+    position:relative;
+}
+#aboutMe{
+
+    background-color: lightblue;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+#currentinfo{
+    background-color: lightblue;
+    color: black;
+    padding: 10px;
+    text-align: center;   
+}    
+#backgroundinfo{
+    background-color: lightblue;
+    color: black;
+    padding: 10px;
+    text-align: center;   
+}    
+#futureinfo{
+    background-color: lightblue;
+    color: black;
+    padding: 10px;
+    text-align: center;   
+} 
+p{
+    color: black;
+}
+h1{
+    background-color: lightblue;
+    color: rgb(165, 19, 19);
+    padding: 10px;
+    text-align: center; 
+}
+
+
