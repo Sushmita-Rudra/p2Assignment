@@ -1,16 +1,29 @@
-const  calcVolume = (length, breadth,height) => {
+/*const  calcVolume = (length, breadth,height) => {
     return length * breadth * height
-  }
+  }*/
 
   
-  document.querySelector('#calculator').addEventListener('click', () => {
+  document.querySelector('#calculator').addEventListener('click', volume)
  
-    const i = parseInt(document.querySelector('#length').value)
-    const j = parseInt(document.querySelector('#breadth').value)
-    const k = parseInt(document.querySelector("#height").value)
-    const ans = `The volume of cuboid is ${calcVolume (i, j, k)}.`
-    // name+" , the biggest String among three is " +biggest;
+  function volume(){
+    const i = parseInt(document.getElementById("length").value)
+    const j = parseInt(document.getElementById("breadth").value)
+    const k = parseInt(document.getElementById("height").value)
+    const ans = i*j*k;
+    
     //var ans = calcVolume (i, j, k);
 
-    document.querySelector('#volumeOfCuboid').innerHTML = ans
-  })
+    document.querySelector('#volume').innerHTML = ans;
+  }
+
+  function clickCounter() {
+    if(typeof(Storage) !== "undefined") {
+      if (localStorage.clickcount) {
+        localStorage.clickcount = Number(localStorage.clickcount)+1;
+      } else {
+        localStorage.clickcount = 1;
+      }
+      document.getElementById("storage").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+    } 
+  }
+
