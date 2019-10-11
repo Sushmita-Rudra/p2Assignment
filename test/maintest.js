@@ -4,6 +4,8 @@ QUnit.test('TEST add', assert => {
   assert.equal(volume(1, 1, 1), 1, 'Positive integers')
   assert.equal(volume(-1, -1, -2), -2, 'Negative integers')
   assert.equal(volume(-10, 10 , 1), -100, 'Mixed')
+  assert.equal(volume(10, -10 , 2), -120, 'Failed')
+  assert.equal(volume(0.6, 10 , 0.8), 4.8, 'Decimal')
 })
 
 function volume(x,y,z){
